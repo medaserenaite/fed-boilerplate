@@ -1,3 +1,29 @@
+//...GLOBAL
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h6 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h4 {
+    margin-bottom: 0;
+}
+
+.cta {
+    background-color: black;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    border-radius: 5px;
+}
+
+//...NAVIGATION
 .nav {
     &__container {
         width: 100vw;
@@ -27,16 +53,13 @@
 
     &__logo {
         width: 100%;
-        // border:solid 1px peachpuff;
         img {
-            // display: block;
-            // margin:auto;
+            //
         }
     }
 
     &__list {
         
-
         ul {
             display: none;
             @media (min-width: 650px) {
@@ -52,9 +75,7 @@
     }
 }
 
-
-
-
+//...BANNER
 .banner {
     &__container {
         width: 100vw;
@@ -63,7 +84,6 @@
         right: 50%;
         margin-left: -50vw;
         margin-right: -50vw;
-
         padding-top: 30px;
         padding-bottom: 100px;
         padding: 30px 30px 100px 30px;
@@ -74,6 +94,7 @@
     }
 }
 
+//...CARDS
 .cards {
     display: block;
     margin:auto;
@@ -91,18 +112,16 @@
         width: 96%;
         @media (min-width: 800px) {
             justify-content: center;
-
-        //     justify-content: space-around;
         }
 
     }
 
     &__item {
         border:gray solid 1px;
-        // background-color: yellow;
         margin-bottom: 40px;
         padding: 20px;
         background-color: white;
+
         @media (min-width: 800px) {
             min-width: 200px;
             max-width: 380px;
@@ -119,36 +138,14 @@
             display: block;
             margin: auto;
         }
-
     }
 
     &__summary {
-        // width: 94%;
+        // 
     }
-}
-
-.footer {
-    &__container {
-        display: flex;
-        justify-content: space-between;
-        border-top: 2px black solid;
-        padding-top:5px;
-        margin-top: 30px;
-    }
-}
-
-.cta {
-    background-color: black;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    color: white;
-    border-radius: 5px;
 }
 
 .article {
-    // border: 1px yellowgreen solid;
     width: 96%;
     display: block;
     margin:auto;
@@ -165,13 +162,13 @@
         display: block;
         margin: auto;
         padding: 8px;
+
         img {
             width: 100%;
-            
         }
+
         @media (min-width: 800px) {
-            // width: 50%;
-            // height: ;
+            // 
         }
     }
 
@@ -189,17 +186,12 @@
     }
 }
 
-h2 {
-    margin-top: 0;
-    margin-bottom: 0;
+.footer {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        border-top: 2px black solid;
+        padding-top:5px;
+        margin-top: 30px;
+    }
 }
-
-h6 {
-    margin-bottom: 0;
-    margin-top: 0;
-}
-
-h4 {
-    margin-bottom: 0;
-}
-
