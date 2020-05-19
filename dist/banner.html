@@ -11,12 +11,21 @@
 </head>
 
 <body>
+    <!-- <h1>view at 1200px</h1> -->
     <!-- <form>
         <input type="checkbox" id="desktopOnly" onclick="toggleCheck()"/> desktop only
         <input type="checkbox" id="mobileOnly"/> mobile only
         <input type="checkbox" id="desktopMobile"/> desktop and mobile
     </form> -->
-    
+    <!-- <div class="d-m-header">
+        <div class="d-m-header__section"><h1>desktop</h1></div>
+        <div class="d-m-header__section"><h1>mobile</h1></div>
+    </div> -->
+    <form>
+        <input type="checkbox" id="background" onclick="if(this.checked){myFunction()}"/>background-image<br>
+        <input type="checkbox" id="bottomElement" onclick="if(this.checked){bottomEl()}"/>show bottom element
+        <input type="checkbox" id="eyebrowForm"/>
+    </form>
     <div class="views">
         <div class="views-D">
             <div class="banner">
@@ -26,25 +35,110 @@
                     <button class="cta" contenteditable="true">MEOW NOW</button>
                 </div>
             </div>
+
+            <div class="cards" style="display: none;">
+                <div class="cards__container">
+                    <div class="cards__item">
+                        <div class="cards__image">
+                            <img src="https://via.placeholder.com/200x100"/>
+                        </div>
+                        <div class="cards__summary">
+                            <h2 class="font-header-card">Article 1</h2>
+                            <h6>Aug 8, 2013</h6>
+                            <p>I cry and cry and cry unless you pet me, and then maybe i cry just for fun bird bird bird bird bird bird human why take bird out i could have eaten that yet chase dog then run away</p>
+                        </div>                    </div>
+                </div>
+                <div class="cards__container">
+                    <div class="cards__item">
+                        <div class="cards__image">
+                            <img src="https://via.placeholder.com/200x100"/>
+                        </div>
+                        <div class="cards__summary">
+                            <h2 class="font-header-card">Article 1</h2>
+                            <h6>Aug 8, 2013</h6>
+                            <p>I cry and cry and cry unless you pet me, and then maybe i cry just for fun bird bird bird bird bird bird human why take bird out i could have eaten that yet chase dog then run away</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__container">
+                    <div class="cards__item">
+                        <div class="cards__image">
+                            <img src="https://via.placeholder.com/200x100"/>
+                        </div>
+                        <div class="cards__summary">
+                            <h2 class="font-header-card">Article 1</h2>
+                            <h6>Aug 8, 2013</h6>
+                            <p>I cry and cry and cry unless you pet me, and then maybe i cry just for fun bird bird bird bird bird bird human why take bird out i could have eaten that yet chase dog then run away</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <div class="views-M">
             <div class="banner">
                 <div class="banner__container" id="banner__container">
                     <h4 class="eyebrow" contenteditable="true">Meow here</h4>
-                    <h1 id="banner__container">Eat a plant, kill a hand<br>Catnip, treats, more catnip.</h1>
+                    <h1 id="banner__container" contenteditable="true">Eat a plant, kill a hand<br>Catnip, treats, more catnip.</h1>
                     <button class="cta" contenteditable="true">MEOW NOW</button>
                 </div>
             </div>
+            <div class="cards cards__mobile" style="display: none;">
+                <div class="cards__container">
+                    <div class="cards__item">
+                        <div class="cards__image">
+                            <img src="https://via.placeholder.com/200x100"/>
+                        </div>
+                        <div class="cards__summary">
+                            <h2 class="font-header-card">Article 1</h2>
+                            <h6>Aug 8, 2013</h6>
+                            <p>I cry and cry and cry unless you pet me, and then maybe i cry just for fun bird bird bird bird bird bird human why take bird out i could have eaten that yet chase dog then run away</p>
+                        </div>                    </div>
+                </div>
+                <div class="cards__container">
+                    <div class="cards__item">
+                        <div class="cards__image">
+                            <img src="https://via.placeholder.com/200x100"/>
+                        </div>
+                        <div class="cards__summary">
+                            <h2 class="font-header-card">Article 1</h2>
+                            <h6>Aug 8, 2013</h6>
+                            <p>I cry and cry and cry unless you pet me, and then maybe i cry just for fun bird bird bird bird bird bird human why take bird out i could have eaten that yet chase dog then run away</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__container">
+                    <div class="cards__item">
+                        <div class="cards__image">
+                            <img src="https://via.placeholder.com/200x100"/>
+                        </div>
+                        <div class="cards__summary">
+                            <h2 class="font-header-card">Article 1</h2>
+                            <h6>Aug 8, 2013</h6>
+                            <p>I cry and cry and cry unless you pet me, and then maybe i cry just for fun bird bird bird bird bird bird human why take bird out i could have eaten that yet chase dog then run away</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-        
-    <form>
-        <input type="checkbox" id="background" onclick="if(this.checked){myFunction()}"/>background-image
-    </form>
 
 
-
+    <div>
+        below is shown: margin, padding, container sizes
+    </div>
+    <div style="border:blue 1px dashed; margin-top:30px">
+    <div class="banner" style="margin-top: 60px; padding-top:20px; border:dashed 1px green">
+        <div class="banner__container" id="banner__container">
+            <h4 class="eyebrow" contenteditable="true" style="border:dashed 1px yellow">Meow here</h4>
+            <h1  contenteditable="true" style="border:dashed 1px yellow">Eat a plant, kill a hand<br>Catnip, treats, more catnip.</h1>
+            <button class="cta" contenteditable="true" style="border:dashed 1px yellow">MEOW NOW</button>
+            <hr style="border:dashed 1px red">
+        </div>
+    </div>
+</div>
     <script src="js/main.js"></script>
 </body>
 
