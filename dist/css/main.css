@@ -258,6 +258,7 @@ form input {
 
 .page-summary {
   margin-bottom: 30px;
+  line-height: 30px;
 }
 .page-summary a {
   border: solid 1px gold;

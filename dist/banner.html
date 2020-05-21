@@ -36,7 +36,7 @@
     <hr>
     <div class="page-summary">
         <h3>on this page:</h3>
-        <a href="#BGvariations">Background variations(@todo)</a>
+        <a href="#BGvariations">Background variations</a>
         <a href="#mobVsDesk">Mobile and desktop views</a>
         <a href="#margins">Visible margins</a>
         
@@ -48,32 +48,58 @@
         what are the pluses and minuses? 
         If it’s ‘full width’, how does it work at the largest screens (like a conference room monitor) and the smallest screens -->
     <div id="BGvariations">
-        <h2>Background variations</h2>
-        <h4>Image</h4>
-        background-position:
-        <!-- top -->
-        <!-- center -->
-        <!-- bottom -->
+
+        <h1>Background variations</h1>
+        <h4>Image used:</h4>
+        <img src="https://cdn.winknews.com/wp-content/uploads/2019/04/Cat.-Credit-CBS-News-e1587602768689.jpg" style="width:200px; border:solid 1px gray"/>
+
+        <h2 style="margin-top: 20px;">Background variations: <u>full screen</u> (resize screen to see the behaviour on mobile)</h2>
+
+        <h3 style="background-color: rgba(0, 229, 255, 0.441); margin-bottom: 0;">background-position: default/top (cover)</h3>
+        <div class="banner banner__full">
+            <div class="banner__container">
+                <h4 class="eyebrow">Meow here</h4>
+                <h1>Eat a plant, kill a hand<br>Catnip, treats, more catnip.</h1>
+                <button class="cta">MEOW NOW</button>
+            </div>
+        </div>
+
+        <h3 style="background-color: rgba(0, 229, 255, 0.441); margin-bottom: 0;">background-position: center (cover)</h3>
+        <div class="banner banner__full">
+            <div class="banner__container" style="background-position: center;">
+                <h4 class="eyebrow">Meow here</h4>
+                <h1>Eat a plant, kill a hand<br>Catnip, treats, more catnip.</h1>
+                <button class="cta">MEOW NOW</button>
+            </div>
+        </div>
+
+        <h3 style="background-color: rgba(0, 229, 255, 0.441); margin-bottom: 0;">background-position: bottom (cover)</h3>
+        <div class="banner banner__full">
+            <div class="banner__container" style="background-position: bottom;">
+                <h4 class="eyebrow">Meow here</h4>
+                <h1>Eat a plant, kill a hand<br>Catnip, treats, more catnip.</h1>
+                <button class="cta">MEOW NOW</button>
+            </div>
+        </div>
+
 
         <!-- cover vs not-->  
-
-        <h4>Not an image</h4>
+        <!-- <h2>Background variations: side by side</h2> -->
+        <!-- <h4>Not an image</h4> -->
     </div>
     
     <hr>
-    WHAT'S THIS?
+   <h1 id="mobVsDesk">Surrounding objects + live text editing</h1>
     <ul>
         <li>Check/uncheck boxes to see elements in desktop and mobile views</li>
         <li>Click on text to edit it live</li>
     </ul>
     <form>
-        <!-- <input type="checkbox" id="background" onclick="if(this.checked){myFunction()}"/>background-image<br> -->
         <input type="checkbox" id="bottomElement" onclick="{bottomEl()}"/>show bottom element
-        to possibly add: nav above; ma
-        <!-- <input type="checkbox" id="eyebrowForm"/> -->
+        to possibly add: nav above;
     </form>
 
-    <div class="views" id="mobVsDesk">
+    <div class="views">
         <div class="views-D">
             <span style="color: green; background-color: yellow;">desktop</span>
             <div class="banner">
@@ -174,14 +200,13 @@
         </div>
     </div>
 
-    <hr>
-    WHAT'S THIS?
+    <hr id="margins">
+    <h1>Clear margin, padding limits (in progress)</h1>
     <ul>
         <li>see container sizes, including padding, margin, etc</li>
         <li>this can be done better</li>
     </ul>
 
-    <!-- <div style="border:blue 1px dashed; margin-top:30px" id="margins"> -->
     <div class="banner banner__full" style="margin-top: 60px; padding-top:20px; border:dashed 1px green">
         <div class="banner__container" id="banner__container">
             <h4 class="eyebrow" contenteditable="true" style="border:dashed 1px yellow">Meow here</h4>
@@ -194,12 +219,7 @@
     </div>
 </div>
 <hr>
-
-<div id="BGvariations">
-TO DO: variations
-</div>
-
-    <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>
