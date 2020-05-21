@@ -11,27 +11,55 @@
 </head>
 
 <body>
-    <!-- <h1>view at 1200px</h1> -->
-    <!-- <form>
-        <input type="checkbox" id="desktopOnly" onclick="toggleCheck()"/> desktop only
-        <input type="checkbox" id="mobileOnly"/> mobile only
-        <input type="checkbox" id="desktopMobile"/> desktop and mobile
-    </form> -->
-    <!-- <div class="d-m-header">
-        <div class="d-m-header__section"><h1>desktop</h1></div>
-        <div class="d-m-header__section"><h1>mobile</h1></div>
-    </div> -->
+    <div class="nav">
+        <div class="nav__container">
+            <div class="nav__mobile">
+                <div class="nav__logo">
+                    <img  src="https://via.placeholder.com/100x50"/>
+                </div>
+                <div class="nav__burger">
+                    <img  src="https://via.placeholder.com/50x50"/>
+                </div>
+            </div>
+            
+            <div class="nav__list">
+                <ul>
+                    <li class="nav__list-item"><a href="/">HOME VIEW</a></li>
+                    <li class="nav__list-item"><a href="/banner.html">BANNER</a></li>
+                    <li class="nav__list-item">PROCESS</li>
+                    <li class="nav__list-item">JOURNAL</li>
+                    <li class="nav__list-item">CONTACT INFO</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="page-summary">
+        <h3>on this page:</h3>
+        <a href="#mobVsDesk">Mobile and desktop views</a>
+        <a href="#margins">Visible margins</a>
+        <a href="#BGvariations">Background variations(@todo)</a>
+    </div>
+    
+    <hr>
+    WHAT'S THIS?
+    <ul>
+        <li>Check/uncheck boxes to see elements in desktop and mobile views</li>
+        <li>Click on text to edit it live</li>
+    </ul>
     <form>
-        <input type="checkbox" id="background" onclick="if(this.checked){myFunction()}"/>background-image<br>
-        <input type="checkbox" id="bottomElement" onclick="if(this.checked){bottomEl()}"/>show bottom element
-        <input type="checkbox" id="eyebrowForm"/>
+        <!-- <input type="checkbox" id="background" onclick="if(this.checked){myFunction()}"/>background-image<br> -->
+        <input type="checkbox" id="bottomElement" onclick="{bottomEl()}"/>show bottom element
+        to possibly add: nav above; ma
+        <!-- <input type="checkbox" id="eyebrowForm"/> -->
     </form>
-    <div class="views">
+    <div class="views" id="mobVsDesk">
         <div class="views-D">
+            <span style="color: green; background-color: yellow;">desktop</span>
             <div class="banner">
                 <div class="banner__container" id="banner__container">
                     <h4 class="eyebrow" contenteditable="true">Meow here</h4>
-                    <h1  contenteditable="true">Eat a plant, kill a hand<br>Catnip, treats, more catnip.</h1>
+                    <h1  contenteditable="true">Eat a plant, kill a hand<br>Catnip, treats.</h1>
                     <button class="cta" contenteditable="true">MEOW NOW</button>
                 </div>
             </div>
@@ -77,10 +105,11 @@
         </div>
 
         <div class="views-M">
+            <span style="color: green; background-color: yellow;">mobile</span>
             <div class="banner">
                 <div class="banner__container" id="banner__container">
                     <h4 class="eyebrow" contenteditable="true">Meow here</h4>
-                    <h1 id="banner__container" contenteditable="true">Eat a plant, kill a hand<br>Catnip, treats, more catnip.</h1>
+                    <h1 id="banner__container" contenteditable="true">Eat a plant, kill a hand<br>Catnip, treats.</h1>
                     <button class="cta" contenteditable="true">MEOW NOW</button>
                 </div>
             </div>
@@ -125,11 +154,13 @@
         </div>
     </div>
 
+    <hr>
+    WHAT'S THIS?
+    <ul>
+        <li>see container sizes, including padding, margin, etc</li>
+    </ul>
 
-    <div>
-        below is shown: margin, padding, container sizes
-    </div>
-    <div style="border:blue 1px dashed; margin-top:30px">
+    <div style="border:blue 1px dashed; margin-top:30px" id="margins">
     <div class="banner" style="margin-top: 60px; padding-top:20px; border:dashed 1px green">
         <div class="banner__container" id="banner__container">
             <h4 class="eyebrow" contenteditable="true" style="border:dashed 1px yellow">Meow here</h4>
@@ -139,6 +170,12 @@
         </div>
     </div>
 </div>
+<hr>
+
+<div id="BGvariations">
+TO DO: variations
+</div>
+
     <script src="js/main.js"></script>
 </body>
 

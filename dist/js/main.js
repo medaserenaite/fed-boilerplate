@@ -18,17 +18,13 @@ var mobile = document.getElementById("mobileOnly");
 var desktopMobile = document.getElementById("desktopMobile");
 var background = document.getElementById("background");
 var eyebrow = document.querySelectorAll(".eyebrow");
-var eyebrowForm = document.getElementById("eyebrowForm"); // eyebrowToggle()
-// eyebrow.forEach((el, i) => {
-//     eyebrow[i].addEventListener('click', function () {
-// })
-// })
+var bottomElement = document.getElementById("bottomElement");
+var eyebrowForm = document.getElementById("eyebrowForm");
 
 function myFunction() {
-  var components = document.querySelectorAll('.banner__container'); // console.log(components)
-
+  var components = document.querySelectorAll('.banner__container');
   components.forEach(function (el, i) {
-    components[i].style.backgroundImage = "url('https://cdn.mos.cms.futurecdn.net/VSy6kJDNq2pSXsCzb6cvYF.jpg')"; // components[i].style.backgroundSize = "60px 120px"
+    components[i].style.backgroundImage = "url('https://cdn.mos.cms.futurecdn.net/VSy6kJDNq2pSXsCzb6cvYF.jpg')";
   });
 }
 
@@ -37,8 +33,15 @@ function bottomEl() {
   bottomEls.forEach(function (el, i) {
     var x = document.querySelectorAll('.cards');
     x.forEach(function (xyz, j) {
-      x[0].style.display = 'flex';
-      x[1].style.display = 'block';
+      if (bottomElement.checked == false) {
+        x[0].style.display = 'none';
+        x[1].style.display = 'none';
+      } else {
+        if (bottomElement.checked == true) {
+          x[0].style.display = 'flex';
+          x[1].style.display = 'block';
+        }
+      }
     });
   });
 }
