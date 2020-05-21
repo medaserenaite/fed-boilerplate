@@ -102,6 +102,14 @@ html h6 {
     text-shadow: 10px 3px 3px #ffc41389;
   }
 }
+.banner__full {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
 
 .cards {
   display: block;
@@ -254,6 +262,12 @@ form input {
 .page-summary a {
   border: solid 1px gold;
   box-shadow: 1px 1px 3px goldenrod;
+}
+
+hr {
+  border: solid 5px black;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */

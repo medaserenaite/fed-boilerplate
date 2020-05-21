@@ -36,9 +36,28 @@
     <hr>
     <div class="page-summary">
         <h3>on this page:</h3>
+        <a href="#BGvariations">Background variations(@todo)</a>
         <a href="#mobVsDesk">Mobile and desktop views</a>
         <a href="#margins">Visible margins</a>
-        <a href="#BGvariations">Background variations(@todo)</a>
+        
+    </div>
+
+    <hr>
+    <!-- how does that work with text inside of the component, especially at small screens? 
+        Is the image a ‘real image’ that can push the container, or a background? 
+        what are the pluses and minuses? 
+        If it’s ‘full width’, how does it work at the largest screens (like a conference room monitor) and the smallest screens -->
+    <div id="BGvariations">
+        <h2>Background variations</h2>
+        <h4>Image</h4>
+        background-position:
+        <!-- top -->
+        <!-- center -->
+        <!-- bottom -->
+
+        <!-- cover vs not-->  
+
+        <h4>Not an image</h4>
     </div>
     
     <hr>
@@ -53,6 +72,7 @@
         to possibly add: nav above; ma
         <!-- <input type="checkbox" id="eyebrowForm"/> -->
     </form>
+
     <div class="views" id="mobVsDesk">
         <div class="views-D">
             <span style="color: green; background-color: yellow;">desktop</span>
@@ -158,13 +178,16 @@
     WHAT'S THIS?
     <ul>
         <li>see container sizes, including padding, margin, etc</li>
+        <li>this can be done better</li>
     </ul>
 
-    <div style="border:blue 1px dashed; margin-top:30px" id="margins">
-    <div class="banner" style="margin-top: 60px; padding-top:20px; border:dashed 1px green">
+    <!-- <div style="border:blue 1px dashed; margin-top:30px" id="margins"> -->
+    <div class="banner banner__full" style="margin-top: 60px; padding-top:20px; border:dashed 1px green">
         <div class="banner__container" id="banner__container">
             <h4 class="eyebrow" contenteditable="true" style="border:dashed 1px yellow">Meow here</h4>
-            <h1  contenteditable="true" style="border:dashed 1px yellow">Eat a plant, kill a hand<br>Catnip, treats, more catnip.</h1>
+            <div style="border:dashed 1px green">
+                <h1  contenteditable="true" style="border:dashed 1px yellow">Eat a plant, kill a hand<br>Catnip, treats, more catnip.</h1>
+            </div>
             <button class="cta" contenteditable="true" style="border:dashed 1px yellow">MEOW NOW</button>
             <hr style="border:dashed 1px red">
         </div>
