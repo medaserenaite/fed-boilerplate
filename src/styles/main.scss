@@ -1,338 +1,413 @@
-//...GLOBAL 
-// needs a  good-er clean up
-html {
+// //...GLOBAL 
+// // needs a  good-er clean up
+// html {
 
-    a {
-        padding: 5px;
-        text-decoration: none;
-        color: black;
-        &:hover {
-            background-color: rgba(55, 55, 255, 0.386);
-            // padding: 5px;
-        }
-    }
+//     a {
+//         padding: 5px;
+//         text-decoration: none;
+//         color: black;
+//         &:hover {
+//             background-color: rgba(55, 55, 255, 0.386);
+//             // padding: 5px;
+//         }
+//     }
 
-    font-family:sans-serif;
+//     font-family:sans-serif;
 
-    h1 {
-        // @media (min-width: 800px) {
-            font-size: 40px;
-        //  }
+//     h1 {
+//         // @media (min-width: 800px) {
+//             font-size: 40px;
+//         //  }
         
-        margin-top:0
-    }
+//         margin-top:0
+//     }
 
-    h2 {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
+//     h2 {
+//         margin-top: 0;
+//         margin-bottom: 0;
+//     }
 
-    h4 {
-        margin-bottom: 0;
-    }
+//     h4 {
+//         margin-bottom: 0;
+//     }
 
-    h6 {
-        margin-bottom: 0;
-        margin-top: 0;
-    }
-}
+//     h6 {
+//         margin-bottom: 0;
+//         margin-top: 0;
+//     }
+// }
 
-.font-header-card {
-    margin-top:15px;
-}
+// .font-header-card {
+//     margin-top:15px;
+// }
 
-.cta {
-    background-color: black;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-    border-radius: 5px;
-    font-weight:500;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
+// .cta {
+//     background-color: black;
+//     padding-left: 30px;
+//     padding-right: 30px;
+//     padding-top: 10px;
+//     padding-bottom: 10px;
+//     color: white;
+//     border-radius: 5px;
+//     font-weight:500;
+//     font-size: 16px;
+//     border: none;
+//     cursor: pointer;
+// }
 
-//...NAVIGATION
-.nav {
-    &__container {
-        width: 100vw;
-        position: relative;
-        left: 50%;
-        right: 50%;
-        top:-10px;
-        margin-left: -50vw;
-        margin-right: -50vw;
+// //...NAVIGATION
+// .nav {
+//     &__container {
+//         width: 100vw;
+//         position: relative;
+//         left: 50%;
+//         right: 50%;
+//         top:-10px;
+//         margin-left: -50vw;
+//         margin-right: -50vw;
 
-        @media (min-width: 650px) {
-           display: flex;
-           justify-content: space-between;
-        }
-    }
+//         @media (min-width: 650px) {
+//            display: flex;
+//            justify-content: space-between;
+//         }
+//     }
 
-    &__mobile {
-        display: flex;
-    }
+//     &__mobile {
+//         display: flex;
+//     }
 
-    &__burger {
-        display: block;
-            @media (min-width: 650px) {
-                display: none;
-            }
-    }
+//     &__burger {
+//         display: block;
+//             @media (min-width: 650px) {
+//                 display: none;
+//             }
+//     }
 
-    &__logo {
-        width: 100%;
-        img {
-            //
-        }
-    }
+//     &__logo {
+//         width: 100%;
+//         img {
+//             //
+//         }
+//     }
 
-    &__list {
+//     &__list {
         
-        ul {
-            display: none;
-            @media (min-width: 650px) {
-                display: flex;
-                // margin-right: -10px;
-            }
-        }
-    }
+//         ul {
+//             display: none;
+//             @media (min-width: 650px) {
+//                 display: flex;
+//                 // margin-right: -10px;
+//             }
+//         }
+//     }
 
-    &__list-item {
-        list-style: none;
-        padding: 10px;
-    }
-}
+//     &__list-item {
+//         list-style: none;
+//         padding: 10px;
+//     }
+// }
 
-//...BANNER
-.banner {
+// //...BANNER
+// .banner {
 
-    &__container {
-        padding-top: 30px;
-        padding-bottom: 100px;
-        padding: 30px 30px 100px 30px;
-        border-top: 3px black solid;
-        border-bottom: 3px gray solid;
-        z-index: 1;
-        // height: 200px;
-        background-image: url("https://cdn.winknews.com/wp-content/uploads/2019/04/Cat.-Credit-CBS-News-e1587602768689.jpg");
-        // background-color: pink;
-        // background-image: url("/cat-background.jpg");
-        background-size: cover;
-        @media (min-width: 800px) {
-            height: 300px;
-            font-size: 25px;
-            text-shadow: 10px 3px 3px #ffc41389;
-        }
-    }
+//     &__container {
+//         padding-top: 30px;
+//         padding-bottom: 100px;
+//         padding: 30px 30px 100px 30px;
+//         border-top: 3px black solid;
+//         border-bottom: 3px gray solid;
+//         z-index: 1;
+//         // height: 200px;
+//         background-image: url("https://cdn.winknews.com/wp-content/uploads/2019/04/Cat.-Credit-CBS-News-e1587602768689.jpg");
+//         // background-color: pink;
+//         // background-image: url("/cat-background.jpg");
+//         background-size: cover;
+//         @media (min-width: 800px) {
+//             height: 300px;
+//             font-size: 25px;
+//             text-shadow: 10px 3px 3px #ffc41389;
+//         }
+//     }
 
-    &__full {
-         width: 100vw;
-        position: relative;
-        left: 50%;
-        right: 50%;
-        margin-left: -50vw;
-        margin-right: -50vw;
-    }
+//     &__full {
+//          width: 100vw;
+//         position: relative;
+//         left: 50%;
+//         right: 50%;
+//         margin-left: -50vw;
+//         margin-right: -50vw;
+//     }
 
-}
+// }
 
-.banner-transparent {
+// .banner-transparent {
 
-    &__container {
-        padding-top: 30px;
-        padding-bottom: 100px;
-        padding: 30px 30px 100px 30px;
-        border-top: 3px black solid;
-        border-bottom: 3px gray solid;
-        z-index: 1;
-        background-image: url("https://pngimg.com/uploads/cat/cat_PNG50504.png");
-        background-repeat: no-repeat;
+//     &__container {
+//         padding-top: 30px;
+//         padding-bottom: 100px;
+//         padding: 30px 30px 100px 30px;
+//         border-top: 3px black solid;
+//         border-bottom: 3px gray solid;
+//         z-index: 1;
+//         background-image: url("https://pngimg.com/uploads/cat/cat_PNG50504.png");
+//         background-repeat: no-repeat;
         
-        @media (min-width: 800px) {
-            height: 300px;
-            font-size: 25px;
-            text-shadow: 10px 3px 3px #ffc41389;
-        }
+//         @media (min-width: 800px) {
+//             height: 300px;
+//             font-size: 25px;
+//             text-shadow: 10px 3px 3px #ffc41389;
+//         }
+//     }
+
+// }
+
+
+// //...CARDS
+// .cards {
+//     display: block;
+//     margin:auto;
+//     position: relative;
+//     margin-top: -50px;
+//     z-index:100;
+//     @media (min-width: 800px) {
+//         display: flex;
+//         justify-content: center;
+//         margin-top: -120px;
+//     }
+//     &__mobile {
+//         width: 400px;
+//         display: block;
+//     }
+
+//     &__container {
+//         display: block;
+//         margin: auto;
+//         width: 96%;
+//         @media (min-width: 800px) {
+//             justify-content: center;
+//         }
+
+//     }
+
+//     &__item {
+//         border:gray solid 1px;
+//         margin-bottom: 40px;
+//         padding: 20px;
+//         background-color: white;
+
+//         @media (min-width: 800px) {
+//             min-width: 200px;
+//             max-width: 380px;
+//             margin:10px
+//         }
+//     }
+
+//     &__image {
+//         display: block;
+//         margin: auto;
+        
+//         img {
+//             width: 100%;
+//             display: block;
+//             margin: auto;
+//         }
+//     }
+
+//     &__summary {
+//         font-size:12px;
+//     }
+// }
+
+// .article {
+//     width: 96%;
+//     display: block;
+//     margin:auto;
+//     margin-top: 30px;
+//     @media (min-width: 800px) {
+//         width:98%;
+//     }
+    
+//     &__container {
+//         @media (min-width: 800px) {
+//             display: flex;
+//         }
+//     }
+
+//     &__image {
+//         border: 1px gray solid;
+//         display: block;
+//         margin: auto;
+//         padding: 8px;
+
+//         img {
+//             width: 100%;
+//         }
+
+//         @media (min-width: 800px) {
+//             margin:0;
+//         }
+//     }
+
+//     &__summary {
+//         margin-top:30px;
+//         @media (min-width: 800px) {
+//             width: 50%;
+//             padding-left: 50px;
+//             padding-right: 50px;
+//         }
+//     }
+// }
+
+// .footer {
+//     &__container {
+//         display: flex;
+//         justify-content: space-between;
+//         border-top: 2px black solid;
+//         padding-top:5px;
+//         margin-top: 30px;
+//     }
+// }
+
+
+
+
+
+// .views-D {
+//     width:1000px;
+//     border: dashed 1px black;
+//     padding-top: 20px;
+//     padding-bottom: 20px;
+//     margin-right: 30px;
+//     height: 450px;
+//     overflow: scroll;
+// }
+
+// .views-M {
+//     width: 400px;
+//     height: 600px;
+//     border: dashed 1px black;
+//     padding-top: 20px;
+//     padding-bottom: 20px;
+//     border-radius: 15px;
+//     overflow: scroll;
+
+    
+// }
+
+// .views {
+//     display: flex;
+// }
+
+// .d-m-header {
+//     display: flex;
+
+//     &__section {
+//         &:first-child {
+//             width: 70%;
+//             // border:solid 1px red;
+//             margin-right: 20px;
+//         }
+//         &:nth-child(2){
+//             width: 25%;
+//             // border:solid 1px red;
+//         }
+//     }
+// }
+
+// form {
+//     margin:20px;
+
+//     & input {
+//         margin:10px
+//     }
+// }
+
+// .page-summary {
+//     margin-bottom:30px;
+//     line-height: 30px;
+//     & a {
+//         border:solid 1px gold;
+//         box-shadow: 1px 1px 3px goldenrod;
+//     }
+// }
+
+// hr {
+//     border:solid 5px black;
+//     margin-top: 50px;
+//     margin-bottom: 50px;
+// }
+
+// ###############################
+// ########    TASK     ##########
+// ###############################
+
+html, body {
+    margin: 0;
+  }
+
+.hero-banner {
+    background: {
+        image: url("https://cdn.winknews.com/wp-content/uploads/2019/04/Cat.-Credit-CBS-News-e1587602768689.jpg");
+        position: center;
+        repeat: no-repeat;
+        size: cover;
     }
 
-}
-
-
-//...CARDS
-.cards {
-    display: block;
-    margin:auto;
+    // 3. banner should be full screen
+    width: 100%;
     position: relative;
-    margin-top: -50px;
-    z-index:100;
-    @media (min-width: 800px) {
-        display: flex;
-        justify-content: center;
-        margin-top: -120px;
-    }
-    &__mobile {
-        width: 400px;
-        display: block;
-    }
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 
-    &__container {
-        display: block;
-        margin: auto;
-        width: 96%;
-        @media (min-width: 800px) {
-            justify-content: center;
-        }
-
-    }
+    // 5. 64px visual space above and below banner content
+    padding: 64px 0;
 
     &__item {
-        border:gray solid 1px;
-        margin-bottom: 40px;
-        padding: 20px;
-        background-color: white;
+        background-color: rgba(252, 252, 252, 0.3);
+        margin: 0 20px;
 
-        @media (min-width: 800px) {
-            min-width: 200px;
-            max-width: 380px;
-            margin:10px
-        }
-    }
-
-    &__image {
-        display: block;
-        margin: auto;
-        
-        img {
-            width: 100%;
-            display: block;
-            margin: auto;
-        }
-    }
-
-    &__summary {
-        font-size:12px;
-    }
-}
-
-.article {
-    width: 96%;
-    display: block;
-    margin:auto;
-    margin-top: 30px;
-    @media (min-width: 800px) {
-        width:98%;
-    }
-    
-    &__container {
-        @media (min-width: 800px) {
-            display: flex;
-        }
-    }
-
-    &__image {
-        border: 1px gray solid;
-        display: block;
-        margin: auto;
-        padding: 8px;
-
-        img {
-            width: 100%;
-        }
-
-        @media (min-width: 800px) {
-            margin:0;
-        }
-    }
-
-    &__summary {
-        margin-top:30px;
-        @media (min-width: 800px) {
-            width: 50%;
-            padding-left: 50px;
-            padding-right: 50px;
-        }
-    }
-}
-
-.footer {
-    &__container {
+        // 4.1 banner content is vertically align
         display: flex;
-        justify-content: space-between;
-        border-top: 2px black solid;
-        padding-top:5px;
-        margin-top: 30px;
+        align-items: center;
+    }
+
+    // 4.2 all banner content should be optional (min-heights)
+    &__eyebrow {
+        // flex-grow: 0;
+        border: solid 1px peachpuff;
+        min-height:50px;
+    }
+
+    &__headline {
+        // flex-grow: 1;
+
+        // 6. banner has min-height: 300px;
+        min-height: 300px;
+        border: solid 1px firebrick;
+    }
+
+    &__body-text {
+        // flex-grow:1;
+        border: solid 1px greenyellow;
+        min-height:50px;
+    }
+
+    &__cta {
+        // flex-grow: 0;
+        min-height: 21px;
     }
 }
 
+.content-container {
+    // 1. content width shouldn't be more than 960px
+    max-width: 960px;
+    height: 100%;
+    text-align: justify;
 
-
-
-
-.views-D {
-    width:1000px;
-    border: dashed 1px black;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-right: 30px;
-    height: 450px;
-    overflow: scroll;
-}
-
-.views-M {
-    width: 400px;
-    height: 600px;
-    border: dashed 1px black;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 15px;
-    overflow: scroll;
-
-    
-}
-
-.views {
-    display: flex;
-}
-
-.d-m-header {
-    display: flex;
-
-    &__section {
-        &:first-child {
-            width: 70%;
-            // border:solid 1px red;
-            margin-right: 20px;
-        }
-        &:nth-child(2){
-            width: 25%;
-            // border:solid 1px red;
-        }
-    }
-}
-
-form {
-    margin:20px;
-
-    & input {
-        margin:10px
-    }
-}
-
-.page-summary {
-    margin-bottom:30px;
-    line-height: 30px;
-    & a {
-        border:solid 1px gold;
-        box-shadow: 1px 1px 3px goldenrod;
-    }
-}
-
-hr {
-    border:solid 5px black;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    // 2. when mobile, there should be 24px of space on both sides
+    width: calc(100% - 48px);
+    display: block;
+    margin: auto;
 }
