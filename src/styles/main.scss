@@ -367,6 +367,8 @@ html, body {
     &__item {
         background-color: rgba(252, 252, 252, 0.3);
         margin: 0 20px;
+        max-width: 960px;
+        margin: auto;
 
         // 4.1 banner content is vertically align
         display: flex;
@@ -378,6 +380,7 @@ html, body {
         // flex-grow: 0;
         border: solid 1px peachpuff;
         min-height:50px;
+        
     }
 
     &__headline {
