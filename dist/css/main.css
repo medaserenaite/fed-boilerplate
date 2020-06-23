@@ -9,11 +9,6 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
   padding: 64px 0;
 }
 .hero-banner__item {
