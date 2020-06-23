@@ -1,15 +1,11 @@
-html, body {
-  margin: 0;
-}
-
 .hero-banner {
   max-height: 172px;
+  width: 100%;
+  padding: 64px 0;
   background-image: url("https://cdn.winknews.com/wp-content/uploads/2019/04/Cat.-Credit-CBS-News-e1587602768689.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  padding: 64px 0;
 }
 .hero-banner__item {
   background-color: rgba(252, 252, 252, 0.3);
@@ -27,6 +23,7 @@ html, body {
 .hero-banner__item p, .hero-banner__item h1, .hero-banner__item button {
   margin: 0;
 }
+
 .content-container {
   max-width: 960px;
   height: 100%;
@@ -34,6 +31,10 @@ html, body {
   width: calc(100% - 48px);
   display: block;
   margin: auto;
+}
+
+html, body {
+  margin: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
