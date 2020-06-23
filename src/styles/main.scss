@@ -346,6 +346,8 @@ html, body {
   }
 
 .hero-banner {
+    //6. hero banner shouldn't be taller than 300px at any time
+    max-height: (300px - 64px - 64px);
     background: {
         image: url("https://cdn.winknews.com/wp-content/uploads/2019/04/Cat.-Credit-CBS-News-e1587602768689.jpg");
         position: center;
@@ -377,29 +379,23 @@ html, body {
 
     // 4.2 all banner content should be optional (min-heights)
     &__eyebrow {
-        // flex-grow: 0;
+        flex-grow: 0;
         border: solid 1px peachpuff;
-        min-height:50px;
         
     }
 
     &__headline {
-        // flex-grow: 1;
-
-        // 6. banner has min-height: 300px;
-        min-height: 300px;
+        flex-grow: 1;
         border: solid 1px firebrick;
     }
 
     &__body-text {
-        // flex-grow:1;
+        flex-grow:1;
         border: solid 1px greenyellow;
-        min-height:50px;
     }
 
     &__cta {
-        // flex-grow: 0;
-        min-height: 21px;
+        flex-grow: 0;
     }
 }
 
