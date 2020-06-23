@@ -15,26 +15,18 @@ html, body {
   background-color: rgba(252, 252, 252, 0.3);
   margin: 0 20px;
   max-width: 960px;
-  margin: auto;
+  margin: calc(100% - 48px), 0;
   display: flex;
   align-items: center;
 }
-.hero-banner__eyebrow {
-  flex-grow: 0;
-  border: solid 1px peachpuff;
+@media (min-width: 1008px) {
+  .hero-banner__item {
+    margin: auto;
+  }
 }
-.hero-banner__headline {
-  flex-grow: 1;
-  border: solid 1px firebrick;
+.hero-banner__item p, .hero-banner__item h1, .hero-banner__item button {
+  margin: 0;
 }
-.hero-banner__body-text {
-  flex-grow: 1;
-  border: solid 1px greenyellow;
-}
-.hero-banner__cta {
-  flex-grow: 0;
-}
-
 .content-container {
   max-width: 960px;
   height: 100%;
